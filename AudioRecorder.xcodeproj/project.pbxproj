@@ -13,6 +13,7 @@
 		6864CAE81D2D61AD0060DD0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6864CAE61D2D61AD0060DD0B /* Main.storyboard */; };
 		6864CAEA1D2D61AD0060DD0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6864CAE91D2D61AD0060DD0B /* Assets.xcassets */; };
 		6864CAED1D2D61AD0060DD0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6864CAEB1D2D61AD0060DD0B /* LaunchScreen.storyboard */; };
+		6864CAF91D2D622E0060DD0B /* Recording.m in Sources */ = {isa = PBXBuildFile; fileRef = 6864CAF81D2D622E0060DD0B /* Recording.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		6864CAE91D2D61AD0060DD0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6864CAEC1D2D61AD0060DD0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6864CAEE1D2D61AD0060DD0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6864CAF71D2D622E0060DD0B /* Recording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Recording.h; path = ../Recording.h; sourceTree = "<group>"; };
+		6864CAF81D2D622E0060DD0B /* Recording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Recording.m; path = ../Recording.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 		6864CADC1D2D61AD0060DD0B /* AudioRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				6864CAF71D2D622E0060DD0B /* Recording.h */,
+				6864CAF81D2D622E0060DD0B /* Recording.m */,
 				6864CAE01D2D61AD0060DD0B /* AppDelegate.h */,
 				6864CAE11D2D61AD0060DD0B /* AppDelegate.m */,
 				6864CAE31D2D61AD0060DD0B /* ViewController.h */,
@@ -152,6 +157,7 @@
 				6864CAE51D2D61AD0060DD0B /* ViewController.m in Sources */,
 				6864CAE21D2D61AD0060DD0B /* AppDelegate.m in Sources */,
 				6864CADF1D2D61AD0060DD0B /* main.m in Sources */,
+				6864CAF91D2D622E0060DD0B /* Recording.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

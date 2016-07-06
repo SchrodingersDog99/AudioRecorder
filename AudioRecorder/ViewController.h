@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Recording.h"
 
 @interface ViewController : UIViewController
 
+- (IBAction)startRecording:(id)sender;
 
 @end
 
