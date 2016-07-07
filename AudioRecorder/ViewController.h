@@ -10,6 +10,7 @@
 #import "Recording.h"
 
 @interface ViewController : UIViewController
+@property (strong, nonatomic) NSMutableArray* recordingsList;
 
 - (IBAction)startRecording:(id)sender;
 
