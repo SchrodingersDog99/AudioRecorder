@@ -59,10 +59,12 @@
 	//NSLog(@"%f", x);
 	//if ((@(0.96)).floatValue == x)
 	self.progressView.progress += 0.04;
+	self.timerLabel.text = [NSString stringWithFormat:@"%0.1f",  self.progressView.progress * 5] ;
 	
 	x = self.progressView.progress;
 	if (x - 1 >= (-0.0001) && x - 1 <= 0.0001) {
 		//NSLog(@"HelloWorld");
+		self.timerLabel.text = @"0";
 		[self.timer invalidate];
 		[self.progressView setProgress:0];
 		self.currentRecording = nil;
@@ -96,7 +98,7 @@
 	
 	NSMutableDictionary* recordingSettings = [[NSMutableDictionary alloc] init];
 	[recordingSettings setValue:@(kAudioFormatLinearPCM) forKey:AVFormatIDKey];
-	[recordingSettings setValue:@4100.0 forKey:AVSampleRateKey];
+	[recordingSettings setValue:@44100.0 forKey:AVSampleRateKey];
 	[recordingSettings setValue:@1 forKey:AVNumberOfChannelsKey];
 	[recordingSettings setValue:@16 forKey:AVLinearPCMBitDepthKey];
 	[recordingSettings setValue:@(NO) forKey:AVLinearPCMIsBigEndianKey];
@@ -134,6 +136,7 @@
 }
 
 - (IBAction)stopRecording:(id)sender {
+	self.timerLabel.text = @"0";
 	[self.progressView setProgress:0];
 	[timer invalidate];
 	self.currentRecording = nil;

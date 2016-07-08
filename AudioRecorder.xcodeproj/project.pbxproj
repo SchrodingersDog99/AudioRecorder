@@ -14,6 +14,7 @@
 		6864CAEA1D2D61AD0060DD0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6864CAE91D2D61AD0060DD0B /* Assets.xcassets */; };
 		6864CAED1D2D61AD0060DD0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6864CAEB1D2D61AD0060DD0B /* LaunchScreen.storyboard */; };
 		6864CAF91D2D622E0060DD0B /* Recording.m in Sources */ = {isa = PBXBuildFile; fileRef = 6864CAF81D2D622E0060DD0B /* Recording.m */; };
+		6865F6361D30048200DBD8FC /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6865F6351D30048200DBD8FC /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		6864CAEE1D2D61AD0060DD0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6864CAF71D2D622E0060DD0B /* Recording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Recording.h; path = ../Recording.h; sourceTree = "<group>"; };
 		6864CAF81D2D622E0060DD0B /* Recording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Recording.m; path = ../Recording.m; sourceTree = "<group>"; };
+		6865F6341D30048200DBD8FC /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		6865F6351D30048200DBD8FC /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				6864CAE31D2D61AD0060DD0B /* ViewController.h */,
 				6864CAE41D2D61AD0060DD0B /* ViewController.m */,
 				6864CAE61D2D61AD0060DD0B /* Main.storyboard */,
+				6865F6341D30048200DBD8FC /* TableViewController.h */,
+				6865F6351D30048200DBD8FC /* TableViewController.m */,
 				6864CAE91D2D61AD0060DD0B /* Assets.xcassets */,
 				6864CAEB1D2D61AD0060DD0B /* LaunchScreen.storyboard */,
 				6864CAEE1D2D61AD0060DD0B /* Info.plist */,
@@ -157,6 +162,7 @@
 				6864CAE51D2D61AD0060DD0B /* ViewController.m in Sources */,
 				6864CAE21D2D61AD0060DD0B /* AppDelegate.m in Sources */,
 				6864CADF1D2D61AD0060DD0B /* main.m in Sources */,
+				6865F6361D30048200DBD8FC /* TableViewController.m in Sources */,
 				6864CAF91D2D622E0060DD0B /* Recording.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +312,7 @@
 				6864CAF31D2D61AD0060DD0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
