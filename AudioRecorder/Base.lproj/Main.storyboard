@@ -17,19 +17,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Audio Recorder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tok-ei-b5Z">
+                                <rect key="frame" x="110" y="28" width="184" height="65"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZA-jN-N0F">
-                                <rect key="frame" x="230" y="117" width="32" height="30"/>
+                                <rect key="frame" x="152" y="134" width="100" height="76"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="start"/>
                                 <connections>
                                     <action selector="startRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FX3-RJ-HId"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkY-Ts-eHa">
+                                <rect key="frame" x="152" y="218" width="100" height="76"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="stop"/>
+                                <connections>
+                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8nA-K8-fIH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbw-Qm-XPb">
+                                <rect key="frame" x="258" y="83" width="147" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="foV-8H-WQk">
+                                <rect key="frame" x="95" y="115" width="150" height="2"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                     </view>
+                    <connections>
+                        <outlet property="progressView" destination="foV-8H-WQk" id="Aws-fA-ZjK"/>
+                        <outlet property="statusLabel" destination="hbw-Qm-XPb" id="TSk-YY-lFB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="146" y="282"/>
         </scene>
     </scenes>
 </document>
